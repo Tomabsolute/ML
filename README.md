@@ -16,4 +16,4 @@ ML
 3. `dpo_train.py`:用于DPO训练
 4. `infer_DPO.py`:用于使用Qwen2-0.5B经过trl数据集DPO训练后的模型
 
-模型过于庞大存于本地
+**模型过于庞大存于本地**
