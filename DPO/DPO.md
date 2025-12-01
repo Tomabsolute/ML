@@ -19,7 +19,7 @@ $$
 **求解**
 建立$Lagrange$函数:
 $$
-\mathbf{L} = \Sigma_y\pi(y|x)r(x,y)-\beta \pi(y|x)\log\frac{\pi(y|x)}{\pi_{ref}(y|x)}+\lambda(\Sigma_y\pi(y|x)-1)\\
+\mathbf{L} = \Sigma_y\pi(y|x)r(x,y)-\beta\Sigma_y \pi(y|x)\log\frac{\pi(y|x)}{\pi_{ref}(y|x)}+\lambda(\Sigma_y\pi(y|x)-1)\\
 对每个\pi(y_i|x)求偏导，\frac{\delta \mathbf{L}}{\delta \pi(y_i|x)} = r(x,y_i)-\beta(\log\frac{\pi(y_i|x)}{\pi_{ref}(y_i|x)}+1)+\lambda=0
 \\又有\Sigma_y\pi_{ref}(y|x) = 1\\
 得到\pi(y_i|x) = \frac{\pi_{ref}(y_i|x)e^\frac{r(x,y_i)}{\beta}}{Z(x)},Z(x) = \Sigma_y\pi_{ref}(y|x)e^\frac{r(x,y)}{\beta}
